@@ -66,10 +66,10 @@
         english {
             label = "qnglish";
             bindings = <
-       &kp Q        &kp P        &kp H         &kp Y         &kp X        &kp Z        &kp W         &kp D         &kp L        &kp V
-       &hrm LGUI E  &hrm LALT A  &hrm LCTRL O  &hrm LSHFT I  &kp U        &kp M        &hrm RSHFT S  &hrm RCTRL T  &hrm RALT R  &hrm RGUI N
-&none  &kp J        &none        &none         &kp K         &none        &kp G        &kp F         &kp C         &none        &kp B        &none
-                                 &lt 5 ESCAPE  &lt 2 SPACE   &lt 3 TAB    &lt 4 ENTER  &lt 2 ENTER   &lt 5 DELETE
+       &kp Q        &kp P        &kp H         &kp Y         &kp X        &kp Z            &kp W         &kp D         &kp L        &kp V
+       &hrm LGUI E  &hrm LALT A  &hrm LCTRL O  &hrm LSHFT I  &kp U        &kp M            &hrm RSHFT S  &hrm RCTRL T  &hrm RALT R  &hrm RGUI N
+&none  &kp J        &none        &none         &kp K         &none        &kp G            &kp F         &kp C         &none        &kp B        &none
+                                 &lt 5 ESCAPE  &lt 2 SPACE   &lt 3 TAB    &lt 4 BACKSPACE  &lt 2 ENTER   &lt 5 DELETE
             >;
         };
 
