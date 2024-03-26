@@ -69,63 +69,63 @@
        &kp Q        &kp P        &kp H         &kp Y         &kp X        &kp Z            &kp W         &kp D         &kp L        &kp V
        &hrm LGUI E  &hrm LALT A  &hrm LCTRL O  &hrm LSHFT I  &kp U        &kp M            &hrm RSHFT S  &hrm RCTRL T  &hrm RALT R  &hrm RGUI N
 &none  &kp J        &none        &none         &kp K         &none        &kp G            &kp F         &kp C         &none        &kp B        &none
-                                 &lt 6 ESCAPE  &lt 2 SPACE   &lt 5 TAB    &lt 0 BACKSPACE  &lt 1 ENTER   &lt 6 DELETE
+                                 &lt 0 ESCAPE  &lt 2 SPACE   &lt 5 TAB    &lt 4 BACKSPACE  &lt 1 ENTER   &lt 6 DELETE
             >;
         };
 
         symbols {
             bindings = <
-        &kp FSLH                      &kp STAR                    &kp MINUS                   &kp PLUS                  &kp HASH         &kp AMPERSAND     &kp EQUAL                  &kp PIPE                              &kp PERCENT                   &kp CARET
-        &hrm LEFT_COMMAND LEFT_BRACE  &hrm LEFT_ALT LEFT_BRACKET  &hrm LEFT_CONTROL RS(LPAR)  &hrm LSHIFT SINGLE_QUOTE  &kp LESS_THAN    &kp GREATER_THAN  &hrm RSHIFT DOUBLE_QUOTES  &hrm RIGHT_CONTROL RIGHT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_BRACKET  &hrm RIGHT_COMMAND RIGHT_BRACKET
-&trans  &kp BACKSLASH                 &none                       &none                       &kp UNDERSCORE            &kp AT           &none             &kp DOLLAR                 &kp GRAVE                             &kp TILDE                     &trans                            &trans
-                                                                  &trans                      &trans                    &trans           &trans            &trans                     &trans
+       &kp FSLH                      &kp STAR                    &kp MINUS                   &kp PLUS                  &kp HASH         &kp AMPERSAND     &kp EQUAL                  &kp PIPE                              &kp PERCENT                   &kp CARET
+       &hrm LEFT_COMMAND LEFT_BRACE  &hrm LEFT_ALT LEFT_BRACKET  &hrm LEFT_CONTROL RS(LPAR)  &hrm LSHIFT SINGLE_QUOTE  &kp LESS_THAN    &kp GREATER_THAN  &hrm RSHIFT DOUBLE_QUOTES  &hrm RIGHT_CONTROL RIGHT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_BRACKET  &hrm RIGHT_COMMAND RIGHT_BRACKET
+&none  &kp BACKSLASH                 &none                       &none                       &kp UNDERSCORE            &kp AT           &none             &kp DOLLAR                 &kp GRAVE                             &kp TILDE                     &none                             &none
+                                                                 &none                       &none                     &none            &none             &none                      &none
             >;
         };
 
         en_punctuation {
             bindings = <
-        &none  &none         &none          &none    &none     &none   &none      &none      &none            &none
-        &none  &kp QUESTION  &kp SEMICOLON  &kp DOT  &none     &none   &kp COMMA  &kp COLON  &kp EXCLAMATION  &none
-&trans  &none  &none         &none          &none    &none     &none   &none      &none      &none            &none  &trans
-                             &trans         &trans   &trans    &trans  &trans     &trans
+       &none  &none         &none          &none    &none      &none              &none      &none      &none            &none
+       &none  &kp QUESTION  &kp SEMICOLON  &kp DOT  &kp SQT    &kp DOUBLE_QUOTES  &kp COMMA  &kp COLON  &kp EXCLAMATION  &kp MINUS
+&none  &none  &none         &none          &none    &none      &none              &none      &none      &none            &none      &none
+                            &none          &none    &none      &none              &none      &none
             >;
         };
 
         russian {
             bindings = <
-        &kp DOT      &kp G        &kp LBKT      &kp S         &kp Z     &kp P   &trans  &kp L     &kp K  &kp D
-        &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B  &kp E     &kp V   &kp C   &kp N     &kp H  &kp Y
-&trans  &kp Q        &kp APOS     &kp W         &kp R         &trans    &kp U   &kp A   &kp SEMI  &kp X  &kp COMMA  &trans
-                                  &trans        &trans        &trans    &trans  &trans  &trans
+       &kp DOT      &kp G        &kp LBKT      &kp S         &kp Z    &kp P  &none  &kp L     &kp K  &kp D
+       &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B  &kp E    &kp V  &kp C  &kp N     &kp H  &kp Y
+&none  &kp Q        &kp APOS     &kp W         &kp R         &none    &kp U  &kp A  &kp SEMI  &kp X  &kp COMMA  &none
+                                 &none         &none         &none    &none  &none  &none
             >;
         };
 
         math {
             label = "MATH";
             bindings = <
-           &kp DOT    &kp N7        &kp N8          &kp N9        &kp ASTERISK    &trans  &trans           &trans     &trans         &trans
-           &kp N0     &kp NUMBER_4  &kp N5          &kp N6        &kp MINUS       &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&kp EQUAL  &kp SLASH  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp PLUS        &trans  &trans           &trans     &trans         &trans         &trans
-                                    &kp LEFT_SHIFT  &trans        &trans          &trans  &trans           &trans
+       &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none  &none            &none      &none          &none
+       &kp SLASH     &kp NUMBER_4  &kp N5        &kp N6        &kp MINUS    &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&none  &kp PERIOD    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL    &none  &none            &none      &none          &none          &none
+                                   &none         &none         &none        &none  &none            &none
             >;
         };
 
         navi {
             bindings = <
-        &trans    &trans    &trans     &trans          &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP   &kp END    &trans
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp LEFT  &kp UP         &kp DOWN    &kp RIGHT  &kp K_COPY
-&trans  &trans    &trans    &trans     &trans          &trans    &trans    &kp K_UNDO     &kp K_REDO  &trans     &kp K_CUT   &trans
-                            &trans     &trans          &trans    &trans    &trans         &trans
+       &none     &none     &none      &none           &none    &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &none
+       &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp LEFT  &kp UP       &kp DOWN       &kp RIGHT  &kp K_COPY
+&none  &none     &none     &none      &none           &none    &none     &kp K_UNDO   &kp K_REDO     &none      &kp K_CUT   &none
+                           &none      &none           &none    &none     &none        &none
             >;
         };
 
         func {
             label = "ADJU";
             bindings = <
-        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &out OUT_TOG  &trans
-        &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans      &kp RSHIFT  &kp RCTRL   &kp RALT      &kp RGUI
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans      &trans      &trans      &trans        &trans    &trans
-                         &trans  &trans  &trans    &trans      &trans      &trans
+       &kp F10  &kp F1  &kp F2  &kp F3  &none     &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &out OUT_TOG  &none
+       &kp F11  &kp F4  &kp F5  &kp F6  &none     &none       &kp RSHIFT  &kp RCTRL   &kp RALT      &kp RGUI
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none       &none       &none       &none         &none     &none
+                        &trans  &trans  &trans    &trans      &trans      &trans
             >;
         };
     };
