@@ -69,7 +69,7 @@
        &kp Q        &kp P        &kp H         &kp Y         &kp X        &kp Z            &kp W         &kp D         &kp L        &kp V
        &hrm LGUI E  &hrm LALT A  &hrm LCTRL O  &hrm LSHFT I  &kp U        &kp M            &hrm RSHFT S  &hrm RCTRL T  &hrm RALT R  &hrm RGUI N
 &none  &kp J        &none        &none         &kp K         &none        &kp G            &kp F         &kp C         &none        &kp B        &none
-                                 &lt 0 ESCAPE  &lt 2 SPACE   &lt 5 TAB    &lt 4 BACKSPACE  &lt 1 ENTER   &lt 6 DELETE
+                                 &lt 0 ESCAPE  &lt 2 SPACE   &lt 4 TAB    &lt 3 BACKSPACE  &lt 1 ENTER   &lt 5 DELETE
             >;
         };
 
@@ -91,15 +91,6 @@
             >;
         };
 
-        russian {
-            bindings = <
-       &kp DOT      &kp G        &kp LBKT      &kp S         &kp Z    &kp P  &none  &kp L     &kp K  &kp D
-       &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B  &kp E    &kp V  &kp C  &kp N     &kp H  &kp Y
-&none  &kp Q        &kp APOS     &kp W         &kp R         &none    &kp U  &kp A  &kp SEMI  &kp X  &kp COMMA  &none
-                                 &none         &none         &none    &none  &none  &none
-            >;
-        };
-
         math {
             label = "MATH";
             bindings = <
@@ -112,10 +103,10 @@
 
         navi {
             bindings = <
-       &none     &none     &none      &none           &none    &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &none
-       &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp LEFT  &kp UP       &kp DOWN       &kp RIGHT  &kp K_COPY
-&none  &none     &none     &none      &none           &none    &none     &kp K_UNDO   &kp K_REDO     &none      &kp K_CUT   &none
-                           &none      &none           &none    &none     &none        &none
+       &none     &none     &none      &none           &none    &none  &kp HOME        &kp PAGE_UP   &kp PAGE_DOWN   &kp END
+       &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&none  &none     &none     &none      &none           &none    &none  &kp K_UNDO      &kp K_REDO    &kp K_COPY      &kp K_CUT        &none
+                           &none      &none           &none    &none  &none           &none
             >;
         };
 
@@ -126,6 +117,15 @@
        &kp F11  &kp F4  &kp F5  &kp F6  &none     &none       &kp RSHIFT  &kp RCTRL   &kp RALT      &kp RGUI
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none       &none       &none       &none         &none     &none
                         &trans  &trans  &trans    &trans      &trans      &trans
+            >;
+        };
+
+        russian {
+            bindings = <
+       &kp DOT      &kp G        &kp LBKT      &kp S         &kp Z    &kp P  &none  &kp L     &kp K  &kp D
+       &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B  &kp E    &kp V  &kp C  &kp N     &kp H  &kp Y
+&none  &kp Q        &kp APOS     &kp W         &kp R         &none    &kp U  &kp A  &kp SEMI  &kp X  &kp COMMA  &none
+                                 &none         &none         &none    &none  &none  &none
             >;
         };
     };
