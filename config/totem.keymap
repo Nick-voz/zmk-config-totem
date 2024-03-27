@@ -70,11 +70,11 @@
             bindings = <&kp>, <&kp>;
         };
 
-        Coma_rBraket: Coma_rBraket {
+        m_rBraket: m_rBraket {
             compatible = "zmk,behavior-tap-dance";
-            label = "COMA_RBRAKET";
+            label = "M_RBRAKET";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp RIGHT_BRACKET>;
+            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
         };
 
         I_O: I_O {
@@ -194,10 +194,10 @@
 
         russian {
             bindings = <
-       &kp DOT      &kp G        &kp LBKT      &kp S                &kp Z            &kp P            &I_O                  &kp L      &kp K  &kp D
-       &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B         &kp E            &kp V            &kp C                 &kp N      &kp H  &kp Y
-&none  &kp Q        &kp APOS     &kp W         &kp R                &Coma_rBraket    &kp U            &kp A                 &kp SEMI   &kp X  &kp COMMA  &none
-                                 &lt 6 ESC     &to_symbols 0 SPACE  &lt 4 TAB        &lt 3 BACKSPACE  &to_symbols 0 RETURN  &lt 5 DEL
+       &kp DOT      &kp G        &kp LBKT      &kp S                &kp Z         &kp P            &I_O                  &kp L      &kp K  &kp D
+       &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B         &kp E         &kp V            &kp C                 &kp N      &kp H  &kp Y
+&none  &kp Q        &kp APOS     &kp W         &kp R                &m_rBraket    &kp U            &kp A                 &kp SEMI   &kp X  &kp COMMA  &none
+                                 &lt 6 ESC     &to_symbols 0 SPACE  &lt 4 TAB     &lt 3 BACKSPACE  &to_symbols 0 RETURN  &lt 5 DEL
             >;
         };
     };
