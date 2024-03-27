@@ -88,7 +88,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
         };
 
         to_punct: to_punct {
@@ -100,6 +100,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
+            flavor = "tap-unless-interrupted";
         };
     };
 
