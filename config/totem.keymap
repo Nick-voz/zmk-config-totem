@@ -29,6 +29,12 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        ru_en_laers {
+            bindings = <&tog 6>;
+            key-positions = <37 32>;
+            layers = <6 0>;
+        };
     };
 
     behaviors {
