@@ -85,10 +85,10 @@
             bindings = <&ru_en_symbols_ru>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <140>;
+            quick-tap-ms = <140>;
             require-prior-idle-ms = <125>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
         };
 
         to_punct: to_punct {
@@ -97,10 +97,10 @@
             bindings = <&ru_en_punct_ru>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <140>;
+            quick-tap-ms = <149>;
             require-prior-idle-ms = <125>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
         };
     };
 
@@ -160,8 +160,8 @@
         symbols {
             bindings = <
        &kp FSLH                      &kp STAR                    &kp MINUS                   &kp PLUS                  &kp HASH         &kp AMPERSAND     &kp EQUAL                  &kp PIPE                              &kp PERCENT                   &kp CARET
-       &hrm LEFT_COMMAND LEFT_BRACE  &hrm LEFT_ALT LEFT_BRACKET  &hrm LEFT_CONTROL RS(LPAR)  &hrm LSHIFT SINGLE_QUOTE  &kp LESS_THAN    &kp GREATER_THAN  &hrm RSHIFT DOUBLE_QUOTES  &hrm RIGHT_CONTROL RIGHT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_BRACKET  &hrm RIGHT_COMMAND RIGHT_BRACKET
-&none  &kp BACKSLASH                 &none                       &none                       &kp UNDERSCORE            &kp AT           &none             &kp DOLLAR                 &kp GRAVE                             &kp TILDE                     &none                             &none
+       &hrm LEFT_COMMAND LEFT_BRACE  &hrm LEFT_ALT LEFT_BRACKET  &hrm LEFT_CONTROL RS(LPAR)  &hrm LSHIFT SINGLE_QUOTE  &kp LESS_THAN    &kp GREATER_THAN  &hrm RSHIFT DOUBLE_QUOTES  &hrm RIGHT_CONTROL RIGHT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_BRACKET  &hrm RIGHT_COMMAND RIGHT_BRACE
+&none  &kp BACKSLASH                 &none                       &none                       &kp UNDERSCORE            &kp AT           &none             &kp DOLLAR                 &kp GRAVE                             &kp TILDE                     &none                           &none
                                                                  &none                       &none                     &none            &none             &none                      &none
             >;
         };
