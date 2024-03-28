@@ -144,7 +144,7 @@
        &kp Q        &kp P        &kp H         &kp Y         &kp X        &kp Z            &kp W         &kp D         &kp L        &kp V
        &hrm LGUI E  &hrm LALT A  &hrm LCTRL O  &hrm LSHFT I  &kp U        &kp M            &hrm RSHFT S  &hrm RCTRL T  &hrm RALT R  &hrm RGUI N
 &none  &kp J        &none        &none         &kp K         &none        &kp G            &kp F         &kp C         &none        &kp B        &none
-                                 &lt 0 ESCAPE  &lt 3 SPACE   &lt 5 TAB    &lt 4 BACKSPACE  &lt 2 ENTER   &lt 6 DELETE
+                                 &lt 7 ESCAPE  &lt 3 SPACE   &lt 5 TAB    &lt 4 BACKSPACE  &lt 2 ENTER   &lt 6 DELETE
             >;
         };
 
@@ -153,7 +153,7 @@
        &kp DOT      &kp G        &kp LBKT      &kp S              &kp Z         &kp P            &I_O                  &kp L                 &kp K        &kp D
        &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B       &kp E         &kp V            &hrm RSHFT C          &hrm RIGHT_CONTROL N  &hrm RALT H  &hrm RGUI Y
 &none  &kp Q        &kp APOS     &kp W         &kp R              &m_rBraket    &kp U            &kp A                 &kp SEMI              &kp X        &kp COMMA    &none
-                                 &lt 1 ESC     &to_punct 0 SPACE  &lt 5 TAB     &lt 4 BACKSPACE  &to_symbols 0 RETURN  &lt 6 DEL
+                                 &lt 7 ESC     &to_punct 0 SPACE  &lt 5 TAB     &lt 4 BACKSPACE  &to_symbols 0 RETURN  &lt 6 DEL
             >;
         };
 
@@ -201,6 +201,15 @@
        &kp F11  &kp F4  &kp F5  &kp F6  &none     &none       &kp RSHIFT  &kp RCTRL   &kp RALT      &kp RGUI
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none       &none       &none       &none         &none     &none
                         &trans  &trans  &trans    &trans      &trans      &trans
+            >;
+        };
+
+        system_actions {
+            bindings = <
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
     };
