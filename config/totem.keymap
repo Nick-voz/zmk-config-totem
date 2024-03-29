@@ -35,6 +35,11 @@
             key-positions = <37 32>;
             layers = <1 0>;
         };
+
+        game {
+            bindings = <&to 8>;
+            key-positions = <5 4 33 36>;
+        };
     };
 
     behaviors {
@@ -210,6 +215,15 @@
        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none  &none
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+       &kp LALT   &kp Q  &kp W     &kp E      &kp R               &none  &none      &none  &none  &none
+       &kp LSHFT  &kp A  &kp S     &kp D      &kp F               &none  &none      &none  &none  &none
+&none  &kp LGUI   &kp Z  &kp X     &kp C      &kp V               &none  &none      &none  &none  &none  &none
+                         &kp LGUI  &kp SPACE  &kp LEFT_CONTROL    &none  &lt 0 RET  &none
             >;
         };
     };
