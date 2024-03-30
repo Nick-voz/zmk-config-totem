@@ -24,14 +24,8 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        ru_en_laers {
-            bindings = <&change_leng_layer>;
+        ru_layer {
+            bindings = <&ru_layer>;
             key-positions = <37 32>;
             layers = <1 0>;
         };
@@ -44,6 +38,11 @@
         back_from_game {
             bindings = <&to 0>;
             key-positions = <33 36 15 14>;
+        };
+
+        en_layer {
+            bindings = <&en_layer>;
+            key-positions = <36 33>;
         };
     };
 
@@ -95,8 +94,8 @@
             bindings = <&ru_en_symbols_ru>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
-            quick-tap-ms = <140>;
+            tapping-term-ms = <130>;
+            quick-tap-ms = <130>;
             require-prior-idle-ms = <125>;
             flavor = "hold-preferred";
         };
@@ -107,8 +106,8 @@
             bindings = <&ru_en_punct_ru>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
-            quick-tap-ms = <149>;
+            tapping-term-ms = <130>;
+            quick-tap-ms = <130>;
             require-prior-idle-ms = <125>;
             flavor = "hold-preferred";
         };
@@ -137,11 +136,18 @@
             label = "RU_EN_PUNCT_RU";
         };
 
-        change_leng_layer: change_leng_layer {
+        ru_layer: change_leng_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(SPACE)) &tog 1>;
+            bindings = <&kp LG(LA(SPACE)) &to 1>;
             label = "CHANGE_LENG_LAYER";
+        };
+
+        en_layer: en_ru_layers {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(SPACE)) &to 0>;
+            label = "EN_RU_LAYERS";
         };
     };
 
@@ -154,16 +160,16 @@
        &kp Q        &kp P        &kp H         &kp Y         &kp X        &kp Z            &kp W         &kp D         &kp L        &kp V
        &hrm LGUI E  &hrm LALT A  &hrm LCTRL O  &hrm LSHFT I  &kp U        &kp M            &hrm RSHFT S  &hrm RCTRL T  &hrm RALT R  &hrm RGUI N
 &none  &kp J        &none        &none         &kp K         &none        &kp G            &kp F         &kp C         &none        &kp B        &none
-                                 &lt 7 ESCAPE  &lt 3 SPACE   &lt 5 TAB    &lt 4 BACKSPACE  &lt 2 ENTER   &lt 6 DELETE
+                                 &lt 0 ESCAPE  &lt 3 SPACE   &lt 5 TAB    &lt 4 BACKSPACE  &lt 2 SPACE   &lt 6 RET
             >;
         };
 
         russian {
             bindings = <
-       &kp DOT      &kp G        &kp LBKT      &kp S              &kp Z         &kp P            &I_O                  &kp L                 &kp K        &kp D
-       &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B       &kp E         &kp V            &hrm RSHFT C          &hrm RIGHT_CONTROL N  &hrm RALT H  &hrm RGUI Y
-&none  &kp Q        &kp APOS     &kp W         &kp R              &m_rBraket    &kp U            &kp A                 &kp SEMI              &kp X        &kp COMMA    &none
-                                 &lt 7 ESC     &to_punct 0 SPACE  &lt 5 TAB     &lt 4 BACKSPACE  &to_symbols 0 RETURN  &lt 6 DEL
+       &kp DOT      &kp G        &kp LBKT      &kp S              &kp Z         &kp P            &I_O                 &kp L                 &kp K        &kp D
+       &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B       &kp E         &kp V            &hrm RSHFT C         &hrm RIGHT_CONTROL N  &hrm RALT H  &hrm RGUI Y
+&none  &kp Q        &kp APOS     &kp W         &kp R              &m_rBraket    &kp U            &kp A                &kp SEMI              &kp X        &kp COMMA    &none
+                                 &lt 7 ESC     &to_punct 0 SPACE  &lt 5 TAB     &lt 4 BACKSPACE  &to_symbols 0 SPACE  &lt 6 RET
             >;
         };
 
@@ -172,7 +178,7 @@
        &kp FSLH                      &kp STAR                    &kp MINUS                   &kp PLUS                  &kp HASH         &kp AMPERSAND     &kp EQUAL                  &kp PIPE                              &kp PERCENT                   &kp CARET
        &hrm LEFT_COMMAND LEFT_BRACE  &hrm LEFT_ALT LEFT_BRACKET  &hrm LEFT_CONTROL RS(LPAR)  &hrm LSHIFT SINGLE_QUOTE  &kp LESS_THAN    &kp GREATER_THAN  &hrm RSHIFT DOUBLE_QUOTES  &hrm RIGHT_CONTROL RIGHT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_BRACKET  &hrm RIGHT_COMMAND RIGHT_BRACE
 &none  &kp BACKSLASH                 &none                       &none                       &kp UNDERSCORE            &kp AT           &none             &kp DOLLAR                 &kp GRAVE                             &kp TILDE                     &none                           &none
-                                                                 &none                       &none                     &none            &none             &none                      &none
+                                                                 &trans                      &trans                    &trans           &trans            &trans                     &trans
             >;
         };
 
@@ -181,26 +187,26 @@
        &none  &none         &none          &none    &none      &none              &none      &none      &none            &none
        &none  &kp QUESTION  &kp SEMICOLON  &kp DOT  &kp SQT    &kp DOUBLE_QUOTES  &kp COMMA  &kp COLON  &kp EXCLAMATION  &kp MINUS
 &none  &none  &none         &none          &none    &none      &none              &none      &none      &none            &none      &none
-                            &none          &none    &none      &none              &none      &none
+                            &trans         &trans   &trans     &trans             &trans     &trans
             >;
         };
 
         math {
             label = "MATH";
             bindings = <
-       &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none  &none            &none      &none          &none
-       &kp EQUAL     &kp NUMBER_4  &kp N5        &kp N6        &kp N0       &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&none  &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS    &none  &none            &none      &none          &none          &none
-                                   &none         &none         &none        &none  &none            &none
+       &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none   &none            &none      &none          &none
+       &kp EQUAL     &kp NUMBER_4  &kp N5        &kp N6        &kp N0       &none   &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&none  &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS    &none   &none            &none      &none          &none          &none
+                                   &trans        &trans        &trans       &trans  &trans           &trans
             >;
         };
 
         navi {
             bindings = <
-       &none     &none     &none      &none           &none    &none  &kp HOME        &kp PAGE_UP   &kp PAGE_DOWN   &kp END
-       &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-&none  &none     &none     &none      &none           &none    &none  &kp K_UNDO      &kp K_REDO    &kp K_COPY      &kp K_CUT        &none
-                           &none      &none           &none    &none  &none           &none
+       &none     &none     &none      &none           &none     &none   &kp HOME        &kp PAGE_UP   &kp PAGE_DOWN   &kp END
+       &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none     &none   &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&none  &none     &none     &none      &none           &none     &none   &kp K_UNDO      &kp K_REDO    &kp K_COPY      &kp K_CUT        &none
+                           &trans     &trans          &trans    &trans  &trans          &trans
             >;
         };
 
