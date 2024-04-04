@@ -32,12 +32,12 @@
 
         game {
             bindings = <&to 8>;
-            key-positions = <5 4 33 36>;
+            key-positions = <15 14>;
         };
 
         back_from_game {
             bindings = <&to 0>;
-            key-positions = <33 36 15 14>;
+            key-positions = <26 25>;
         };
 
         en_layer {
@@ -99,8 +99,8 @@
             bindings = <&ru_en_symbols_ru>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <130>;
-            quick-tap-ms = <130>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             flavor = "hold-preferred";
         };
@@ -111,8 +111,8 @@
             bindings = <&ru_en_punct_ru>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <130>;
-            quick-tap-ms = <130>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             flavor = "hold-preferred";
         };
