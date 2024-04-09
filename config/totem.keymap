@@ -175,7 +175,7 @@
             >;
         };
 
-        en_punctuation {
+        en_punct {
             bindings = <
        &none  &none         &none          &none    &none      &none              &none      &none      &none            &none
        &none  &kp QUESTION  &kp SEMICOLON  &kp DOT  &kp SQT    &kp DOUBLE_QUOTES  &kp COMMA  &kp COLON  &kp EXCLAMATION  &kp MINUS
