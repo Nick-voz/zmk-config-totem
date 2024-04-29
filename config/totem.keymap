@@ -84,6 +84,8 @@
             label = "M_RBRAKET";
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
+
+            tapping-term-ms = <160>;
         };
 
         I_O: I_O {
@@ -91,6 +93,8 @@
             label = "I_O";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
+
+            tapping-term-ms = <160>;
         };
 
         to_symbols: to_symbols {
