@@ -94,7 +94,7 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
 
-            tapping-term-ms = <160>;
+            tapping-term-ms = <220>;
         };
 
         to_symbols: to_symbols {
