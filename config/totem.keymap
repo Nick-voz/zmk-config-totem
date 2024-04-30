@@ -85,7 +85,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
 
-            tapping-term-ms = <220>;
+            tapping-term-ms = <300>;
         };
 
         I_O: I_O {
