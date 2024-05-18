@@ -166,7 +166,7 @@
        &kp DOT      &kp G        &kp LBKT      &kp S         &kp Z           &kp P            &I_O                 &kp L                 &kp K        &kp D
        &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B  &kp E           &kp V            &hrm RSHFT C         &hrm RIGHT_CONTROL N  &hrm RALT H  &hrm RGUI Y
 &none  &kp Q        &kp APOS     &kp W         &kp R         &m_rBraket      &kp U            &kp A                &kp SEMI              &kp X        &kp COMMA    &none
-                                 &lt 7 TAB     &lt 8 SPACE   &lt 5 ESCAPE    &lt 4 BACKSPACE  &to_symbols 0 SPACE  &lt 6 RET
+                                 &lt 0 TAB     &lt 8 SPACE   &lt 5 ESCAPE    &lt 4 BACKSPACE  &to_symbols 0 SPACE  &lt 6 RET
             >;
         };
 
