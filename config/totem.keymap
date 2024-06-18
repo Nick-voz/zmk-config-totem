@@ -108,6 +108,15 @@
             require-prior-idle-ms = <125>;
             flavor = "hold-preferred";
         };
+
+        z_backslash: z_backslash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Z_BACKSLASH";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp NON_US_BACKSLASH>;
+
+            tapping-term-ms = <220>;
+        };
     };
 
     macros {
@@ -163,7 +172,7 @@
 
         russian {
             bindings = <
-       &kp DOT      &kp G        &kp LBKT      &kp S         &kp EXSEL       &kp P            &I_O                 &kp L                 &kp K        &kp D
+       &kp DOT      &kp G        &kp LBKT      &kp S         &z_backslash    &kp P            &I_O                 &kp L                 &kp K        &kp D
        &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B  &kp E           &kp V            &hrm RSHFT C         &hrm RIGHT_CONTROL N  &hrm RALT H  &hrm RGUI Y
 &none  &kp Q        &kp APOS     &kp W         &kp R         &m_rBraket      &kp U            &kp A                &kp SEMI              &kp X        &kp COMMA    &none
                                  &lt 9 TAB     &lt 8 SPACE   &lt 5 ESCAPE    &lt 4 BACKSPACE  &to_symbols 0 SPACE  &lt 6 RET
