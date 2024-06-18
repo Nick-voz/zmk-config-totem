@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Z_BACKSLASH";
             #binding-cells = <0>;
-            bindings = <&kp Z>, <&kp NON_US_BACKSLASH>;
+            bindings = <&kp Z>, <&kp BACKSLASH>;
 
             tapping-term-ms = <220>;
         };
