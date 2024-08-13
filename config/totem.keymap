@@ -190,10 +190,10 @@
 
         en_punct {
             bindings = <
-       &none             &none                   &none                        &none                &none      &none              &none                       &none                                 &none                       &none
-       &kp LEFT_COMMAND  &hrm LEFT_ALT QUESTION  &hrm LEFT_CONTROL SEMICOLON  &hrm LEFT_SHIFT DOT  &kp SQT    &kp DOUBLE_QUOTES  &hrm RIGHT_SHIFT LS(COMMA)  &hrm RIGHT_CONTROL RIGHT_PARENTHESIS  &hrm RIGHT_ALT EXCLAMATION  &hrm RIGHT_GUI MINUS
-&none  &none             &none                   &none                        &none                &none      &none              &none                       &none                                 &none                       &none                 &none
-                                                 &trans                       &trans               &trans     &trans             &trans                      &trans
+       &none             &none                   &none                        &none                &none      &none              &none                   &none                     &none                       &none
+       &kp LEFT_COMMAND  &hrm LEFT_ALT QUESTION  &hrm LEFT_CONTROL SEMICOLON  &hrm LEFT_SHIFT DOT  &kp SQT    &kp DOUBLE_QUOTES  &hrm RIGHT_SHIFT COMMA  &hrm RIGHT_CONTROL COLON  &hrm RIGHT_ALT EXCLAMATION  &hrm RIGHT_GUI MINUS
+&none  &none             &none                   &none                        &none                &none      &none              &none                   &none                     &none                       &none                 &none
+                                                 &trans                       &trans               &trans     &trans             &trans                  &trans
             >;
         };
 
