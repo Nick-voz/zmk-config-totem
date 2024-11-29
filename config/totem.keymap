@@ -84,7 +84,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>, <&kp BACKSLASH>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
         };
 
         I_O: I_O {
@@ -93,7 +93,7 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
 
-            tapping-term-ms = <220>;
+            tapping-term-ms = <200>;
         };
 
         to_symbols: to_symbols {
