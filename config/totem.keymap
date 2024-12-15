@@ -128,6 +128,7 @@
                 <&tog 2 &kp LG(LA(SPACE))>;
 
             label = "RU_EN_SYMBOLS_RU";
+            tap-ms = <29>;
         };
 
         ru_en_punct_ru: ru_en_punct_ru {
