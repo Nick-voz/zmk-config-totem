@@ -116,6 +116,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LA(SLASH)) &kp SPACE &kp BACKSPACE>;
             label = "RU_BACKSLASH";
+            tap-ms = <10>;
         };
     };
 
@@ -152,7 +153,7 @@
 
         ru_symbols {
             bindings = <
-       &kp FSLH              &kp LA(N8)           &kp MINUS          &kp LS(EQUAL)                  &kp LA(N3)        &kp LA(N7)            &kp EQUAL                        &kp LA(LS(N1))     &kp LA(LS(N5))   &kp LS(LA(N6))
+       &kp FSLH              &kp LA(N8)           &kp MINUS          &kp LS(EQUAL)                  &kp LA(N3)        &kp LA(N7)            &kp EQUAL                        &kp LA(LS(N1))     &kp LA(N5)       &kp LA(N6)
        &hrm LEFT_GUI LA(N9)  &hrm LALT LS(GRAVE)  &hrm LCTRL LS(N9)  &hrm LEFT_SHIFT LS(LA(COMMA))  &kp LS(LA(N9))    &kp LS(LA(NUMBER_2))  &hrm RIGHT_SHIFT LS(LA(PERIOD))  &hrm RCTRL LS(N0)  &hrm RALT GRAVE  &hrm RGUI LA(N0)
 &none  &ru_backslash         &none                &none              &kp LS(MINUS)                  &kp LA(N2)        &none                 &kp LA(NUMBER_4)                 &kp LA(LS(N0))     &kp LA(LS(M))    &none             &none
                                                   &lt 6 TAB          &trans                         &trans            &trans                &trans                           &trans
