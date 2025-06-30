@@ -20,6 +20,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA DOT APOS LBKT RBKT>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -42,23 +44,6 @@
     };
 
     behaviors {
-        ss_hs_modmorph: ss_hs_modmorph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SS_HS_MODMORPH";
-            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        kh_hs_tapdance: kh_hs_tapdance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "KH_HS_TAPDANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-        };
-
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -84,15 +69,6 @@
             bindings = <&kp I>, <&kp O>;
 
             tapping-term-ms = <200>;
-        };
-
-        z_backslash: z_backslash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "Z_BACKSLASH";
-            #binding-cells = <0>;
-            bindings = <&kp Z>, <&kp BACKSLASH>;
-
-            tapping-term-ms = <220>;
         };
     };
 
