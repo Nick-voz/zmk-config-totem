@@ -21,7 +21,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &caps_word {
-    continue-list = <UNDERSCORE BACKSPACE DELETE COMMA DOT APOS LBKT RBKT>;
+    continue-list = <UNDERSCORE BACKSPACE DELETE COMMA DOT APOS LBKT RBKT SEMI>;
     mods = <(MOD_LSFT)>;
 };
 
