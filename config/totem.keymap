@@ -98,6 +98,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         shift_tapDance_m_rb_bs: shift_tapDance_m_rb_bs {
@@ -107,6 +108,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
