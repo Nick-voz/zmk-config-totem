@@ -74,16 +74,16 @@
             tapping-term-ms = <200>;
         };
 
-        I_O: I_O {
+        sI_sO: sI_sO {
             compatible = "zmk,behavior-tap-dance";
-            label = "I_O";
+            label = "SI_SO";
             #binding-cells = <0>;
             bindings = <&kp LS(I)>, <&kp LS(O)>;
         };
 
-        M_sRBraket_sBackslash: M_sRBraket_sBackslash {
+        sM_sRBraket_sBackslash: sM_sRBraket_sBackslash {
             compatible = "zmk,behavior-tap-dance";
-            label = "M_SRBRAKET_SBACKSLASH";
+            label = "SM_SRBRAKET_SBACKSLASH";
             #binding-cells = <0>;
             bindings =
                 <&kp LS(M)>,
@@ -94,7 +94,7 @@
         shift_tapDance_i_o: shift_tapDance_i_o {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_TAPDANCE_I_O";
-            bindings = <&i_o>, <&I_O>;
+            bindings = <&i_o>, <&sI_sO>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -104,7 +104,7 @@
         shift_tapDance_m_rb_bs: shift_tapDance_m_rb_bs {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_TAPDANCE_M_RB_BS";
-            bindings = <&m_rBraket_backslash>, <&M_sRBraket_sBackslash>;
+            bindings = <&m_rBraket_backslash>, <&sM_sRBraket_sBackslash>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
