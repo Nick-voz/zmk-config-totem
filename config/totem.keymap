@@ -103,7 +103,7 @@
         shift_tapDance_m_rb_bs: shift_tapDance_m_rb_bs {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_TAPDANCE_M_RB_BS";
-            bindings = <&none>, <&none>;
+            bindings = <&m_rBraket_backslash>, <&M_sRBraket_sBackslash>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
