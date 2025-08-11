@@ -91,7 +91,7 @@
                 <&kp LS(BACKSLASH)>;
         };
 
-        shift_tapdance_i_o: shift_tapdance_i_o {
+        shift_tapDance_i_o: shift_tapDance_i_o {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_TAPDANCE_I_O";
             bindings = <&i_o>, <&I_O>;
@@ -100,7 +100,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        shift_tapdance_m_rb_bs: shift_tapdance_m_rb_bs {
+        shift_tapDance_m_rb_bs: shift_tapDance_m_rb_bs {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_TAPDANCE_M_RB_BS";
             bindings = <&none>, <&none>;
@@ -156,9 +156,9 @@
 
         russian {
             bindings = <
-       &kp DOT      &kp G        &kp LBKT      &kp S         &kp Z                      &kp P            &shift_tapdance_i_o  &kp L                 &kp K        &kp D
+       &kp DOT      &kp G        &kp LBKT      &kp S         &kp Z                      &kp P            &shift_tapDance_i_o  &kp L                 &kp K        &kp D
        &hrm LGUI T  &hrm LALT F  &hrm LCTRL J  &hrm LSHFT B  &kp E                      &kp V            &hrm RSHFT C         &hrm RIGHT_CONTROL N  &hrm RALT H  &hrm RGUI Y
-&none  &kp Q        &kp APOS     &kp W         &kp R         &shift_tapdance_m_rb_bs    &kp U            &kp A                &kp SEMI              &kp X        &kp COMMA    &none
+&none  &kp Q        &kp APOS     &kp W         &kp R         &shift_tapDance_m_rb_bs    &kp U            &kp A                &kp SEMI              &kp X        &kp COMMA    &none
                                  &lt 11 TAB    &lt 5 SPACE   &lt 8 ESCAPE               &lt 7 BACKSPACE  &lt 3 SPACE          &lt 9 RET
             >;
         };
