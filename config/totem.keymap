@@ -194,10 +194,10 @@
 
         ru_punct {
             bindings = <
-       &none         &none                    &none                     &none                   &none     &none             &none                          &none                      &none                        &none
-       &kp LEFT_GUI  &hrm LEFT_ALT RS(SLASH)  &hrm LEFT_CONTROL RS(N8)  &hrm LEFT_SHIFT RS(N7)  &none     &kp LS(NUMBER_2)  &hrm RIGHT_SHIFT LS(NUMBER_6)  &hrm RIGHT_CONTROL LS(N5)  &hrm RIGHT_ALT LS(NUMBER_1)  &hrm RIGHT_GUI MINUS
-&none  &none         &none                    &none                     &none                   &none     &none             &none                          &none                      &none                        &none                 &none
-                                              &trans                    &trans                  &trans    &trans            &trans                         &trans
+       &none         &none                    &none                     &none                   &none             &none             &none                          &none                      &none                        &none
+       &kp LEFT_GUI  &hrm LEFT_ALT RS(SLASH)  &hrm LEFT_CONTROL RS(N8)  &hrm LEFT_SHIFT RS(N7)  &kp LS(LA(N9))    &kp LS(NUMBER_2)  &hrm RIGHT_SHIFT LS(NUMBER_6)  &hrm RIGHT_CONTROL LS(N5)  &hrm RIGHT_ALT LS(NUMBER_1)  &hrm RIGHT_GUI MINUS
+&none  &none         &none                    &none                     &none                   &none             &none             &none                          &none                      &none                        &none                 &none
+                                              &trans                    &trans                  &trans            &trans            &trans                         &trans
             >;
         };
 
