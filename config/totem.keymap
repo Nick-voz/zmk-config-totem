@@ -116,14 +116,14 @@
         ru_layer: change_leng_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(RGUI) &to 1>;
+            bindings = <&kp LS(LA(LC(LG(NUMBER_1)))) &to 1>;
             label = "CHANGE_LENG_LAYER";
         };
 
         en_layer: en_ru_layers {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LGUI) &to 0>;
+            bindings = <&kp LC(LS(LA(LG(N0)))) &to 0>;
             label = "EN_RU_LAYERS";
         };
 
